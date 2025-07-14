@@ -1,0 +1,51 @@
+/* Estilos Gerais */
+body {
+    padding-top: 56px; /* Ajuste para a altura da navbar fixa */
+}
+
+/* Seção Hero (Início) */
+.hero-section {
+    background: url('https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Overlay escuro para melhor legibilidade */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Ajuste de espaçamento para as seções */
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Cartões de Projeto */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Botões de Contato */
+#contato .btn {
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
